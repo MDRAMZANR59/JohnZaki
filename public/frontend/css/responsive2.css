@@ -1,0 +1,1138 @@
+@media only screen and (min-width: 1600px) {
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1365px) and (max-width: 1599px) {
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+/* laptop devices */
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+    /* modal */
+    .tm-btn-wrapper button:last-child {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 7px;
+    }
+}
+
+/* large tablet devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* modal */
+    .modal-model-measurment .column-1 img {
+        height: 95%;
+    }
+    .measurment-modal-title {
+        padding: 50px 17px 55px 10px;
+    }
+    .first-modal-content {
+        gap: 20px;
+    }
+    .measurment-input-item {
+        padding: 16px;
+    }
+    .tm-btn-wrapper button:last-child {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 7px;
+    }
+    
+    .measurment-input-item input {
+        max-width: 84px;
+    }
+    .column-2 span svg {
+        top: 12px;
+        right: 24px;
+    }
+      /* trade page */
+      .trade-heading-p{
+        width: 80%;
+        }
+}
+
+/* medium tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* sign up page */
+    .sign-up-form {
+        padding: 70px 0px 90px;
+    }
+    .sign-up-form .tm-sign-up-heading {
+        font-size: 40px;
+        line-height: 53.36px;
+    }
+    .sign-up-form .tm-sign-up-para {
+        font-size: 22px;
+    }
+    .photo-upload-area {
+        gap: 18px;
+        margin: 30px 0px 20px;
+    }
+    .tm-sign-up-form {
+        gap: 15px;
+    }
+    /* modal */
+    .hide-on-small {
+        display: none;
+    }
+    .tm-btn-wrapper button:first-child {
+        width: 100%;
+    }
+    .tm-btn-wrapper button:last-child {
+        width: 79%;
+    }
+    .continue{
+        width: 100%;
+    }
+    .tm-btn-wrapper button:last-child {
+        width: 78%;
+    }
+ 
+    .modal-model-measurment .column-1{
+       display: none;
+    }
+    .modal-model-measurment .column-2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         background-color:transparent;
+    }
+    .modal-start-option{
+        padding: 97px 45px 61px;
+    }
+    /* trade page */
+    .terms-title h2 {
+        font-size: 26px;
+    }
+    .trade-heading-p{
+        width: 90%;
+        }
+
+
+    /* terms page */
+    .terms-section {
+        padding: 60px 0px;
+    }
+
+    .terms-desktop-version {
+        padding-top: 33.5px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+/* small tablet devices */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+        /* tarek sign up page */
+        .sign-up-form {
+            padding: 70px 0px 90px;
+        }
+        .sign-up-form .tm-sign-up-heading {
+            font-size: 40px;
+            line-height: 53.36px;
+        }
+        .sign-up-form .tm-sign-up-para {
+            font-size: 22px;
+        }
+        .photo-upload-area {
+            gap: 18px;
+            margin: 25px 0px 16px;
+        }
+        .tm-sign-up-form {
+            gap: 15px;
+        }
+        .tm-sign-up-form input {
+            padding: 25px 0px 25px 30px;
+        }
+        .tm-sign-up-btn {
+            font-size: 18px;
+            line-height: 28.8px;
+            padding: 8px 15px;
+        }
+        .tm-photo-text-size .tm-photo-size {
+            font-size: 17.634px;
+            line-height: 30.2px;
+        }
+        .tm-photo-text-size .tm-photo-text {
+            font-size: 21.989px;
+            line-height: 30.982px;
+        }
+      
+     /* modal */
+     .hide-on-small {
+        display: none;
+    }
+    .tm-btn-wrapper button:first-child {
+        width: 100%;
+    }
+    .tm-btn-wrapper button:last-child {
+        width: 79%;
+    }
+     .modal-model-measurment .column-1{
+        display: none;
+     }
+     .modal-model-measurment .column-2 {
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          background-color:transparent;
+     }
+     .modal-start-option{
+         padding: 97px 45px 61px;
+     }
+     .modal-content {
+         width: 90%;
+    }
+    .measurment-modal-title {
+        padding: 90px 10px 50px;
+      }
+   
+    .continue {
+        padding: 10px 16px;
+        font-size: 16px;
+        line-height: 24.24px;
+    }
+    .measurment-input-item label {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 12px;
+    }
+    .measurment-input-item input {
+        font-size: 14px;
+        line-height: 20.4px;
+    }
+    .first-modal-content {
+        gap: 20px;
+    }
+      /* modal */
+      .modal-model-measurment .column-1{
+        display: none;
+     }
+     .modal-model-measurment .column-2 {
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          background-color:transparent;
+     }
+     .modal-start-option{
+         padding: 97px 45px 61px;
+     }
+    /* trade.html responsive by tarek */
+   
+    .trade-heading-p {
+        display: none;
+    }
+
+    .trade-section-row {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    .trade-col-content {
+        align-items: center;
+        padding: 28px 20px;
+    }
+
+    .trade-col-heading {
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+
+    .trade-col {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .trade-col-para {
+        text-align: center;
+    }
+
+    .trade-col-img svg {
+        max-height: 48px;
+        max-width: 48px;
+    }
+
+    .trade-note {
+        margin-top: 28px;
+    }
+
+    .trade-note h4 {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 19.2px;
+    }
+
+    /* terms responsive by tarek */
+    .terms-mobile-content {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .terms-desktop-version {
+        display: none;
+    }
+
+    .terms-banner-inner svg {
+        display: none;
+    }
+
+    .terms-banner h3 {
+        display: block;
+        font-size: 14px;
+    }
+
+    .terms-banner {
+        padding: 50.5px;
+    }
+
+    .terms-banner-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .terms-banner-inner h2 {
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.2px;
+    }
+
+    .terms-section {
+        padding: 30px 0px;
+    }
+
+    .terms-title h2 {
+        font-size: 20px;
+    }
+
+    .terms-accordion-heading {
+        font-size: 18px;
+    }
+
+    .terms-heading-para {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: var(--Text-Body, #5A5C5F);
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 200%;
+        padding-top: 4px;
+    }
+
+    .terms-h4 {
+        padding-top: 0px;
+    }
+}
+
+/* large mobile devices */
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+        /* tarek sign up page */
+        /* header{
+            display: none;
+        } */
+        .sign-up-header,
+        .sign-up-footer{
+            display: none;
+        }
+    .sign-up-section{
+        padding: 0px;
+        font-family: Raleway;
+      }
+      .sign-up-section .container{
+      box-shadow:none;
+      }
+      .sign-up-form{
+        padding: 43px 0px 128px;
+      }
+      .sign-up-form .tm-sign-up-heading{
+        font-size: 24px;
+        line-height: 28.36px;
+        letter-spacing: -0.24px;
+      }
+      .sign-up-form .tm-sign-up-para{
+        font-size: 13px;
+        line-height: 23.4px;
+        margin-top: 4px;
+      }
+      .photo-upload-area{
+        gap: 12px;
+        margin: 20px 0px 8px;
+      }
+      .photo-upload-label{
+        max-width: 52px;
+        max-height: 52px;
+      }
+      .photo-upload-label img{
+       padding: 12px;
+      }
+      .tm-photo-text-size{
+        gap: 4px;
+        flex-direction: column;
+      }
+      .tm-photo-text-size .tm-photo-text{
+      font-size: 14px;
+      line-height: 22px;
+      }
+      .tm-photo-text-size .tm-photo-size{
+      font-size: 11px;
+      line-height: 18px;
+      }
+      .tm-sign-up-form{
+        gap: 12px;
+      }
+      .tm-sign-up-form input{
+        padding: 15px 0px 15px 22px;
+      }
+      .tm-sign-up-form::placeholder{
+      font-size: 11px;
+      line-height: 18px;
+      }
+      .tm-sign-up-btn{
+      font-size: 14px;
+      line-height: 22px;
+      padding: 6px 10px;
+      }
+      .tm-old-user{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22.96px;
+      }
+      .tm-old-user-link{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22.96px;
+      }
+      /* sign in page */
+      .tm-sign-in-privacy{
+        display: block;
+      }
+      
+            /* modal */
+            .hide-on-small {
+                display: none;
+            }
+            .tm-btn-wrapper button:first-child {
+                width: 100%;
+            }
+            .tm-btn-wrapper button:last-child {
+                width: 79%;
+            }
+            .modal-model-measurment .column-1{
+                display: none;
+             }
+             .modal-model-measurment .column-2 {
+                 position: relative;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                  background-color:transparent;
+             }
+             .modal-start-option{
+                 padding: 97px 45px 61px;
+             }
+             .modal-content {
+                 width: 90%;
+            }
+            .measurment-modal-title {
+                padding: 90px 10px 50px;
+              }
+              .column-2 span svg {
+                top: 40px;
+                right: 20px;
+            }
+            .measurment-input-item {
+                gap: 10px;
+                padding: 14px;
+            }
+            .continue {
+                padding: 10px 16px;
+                font-size: 16px;
+                line-height: 24.24px;
+            }
+            .measurment-input-item label {
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 12px;
+            }
+            .measurment-input-item input {
+                font-size: 14px;
+                line-height: 20.4px;
+            }
+            .first-modal-content {
+                gap: 20px;
+            }
+        
+    /* trade.html responsive by tarek */
+    .trade-section .container{
+        --bs-gutter-x: 0rem;
+    }
+    .trade-heading-p {
+        display: none;
+    }
+
+    .trade-section-row {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    .trade-col-content {
+        align-items: center;
+        padding: 28px 20px;
+    }
+    .trade-title-heading{
+        padding: 0px 20px;
+    }
+
+    .trade-col-heading {
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+
+    .trade-col {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .trade-col-para {
+        text-align: center;
+    }
+
+    .trade-col-img svg {
+        max-height: 48px;
+        max-width: 48px;
+    }
+
+    .trade-note {
+        margin-top: 28px;
+    }
+
+    .trade-note h4 {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 19.2px;
+        padding: 0px 20px;
+    }
+
+    /* terms responsive by tarek */
+    .terms-mobile-content {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .terms-desktop-version {
+        display: none;
+    }
+
+    .terms-banner-inner svg {
+        display: none;
+    }
+
+    .terms-banner h3 {
+        display: block;
+        font-size: 14px;
+    }
+
+    .terms-banner {
+        padding: 50.5px 20px;
+    }
+
+    .terms-banner-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .terms-banner-inner h2 {
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.2px;
+    }
+
+    .terms-section {
+        padding: 30px 0px;
+    }
+
+    .terms-title h2 {
+        font-size: 20px;
+    }
+
+    .terms-accordion-heading {
+        font-size: 18px;
+    }
+
+    .terms-heading-para {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: var(--Text-Body, #5A5C5F);
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 200%;
+        padding-top: 4px;
+    }
+
+    .terms-h4 {
+        padding-top: 0px;
+    }
+}
+
+/* mobile devices */
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+        /* tarek sign up page */
+        /* header{
+            display: none;
+        } */
+        .sign-up-header,
+        .sign-up-footer{
+            display: none;
+        }
+    .sign-up-section{
+        padding: 0px;
+        font-family: Raleway;
+      }
+      .sign-up-section .container{
+      box-shadow:none;
+      }
+      .sign-up-form{
+        padding: 43px 0px 128px;
+      }
+      .sign-up-form .tm-sign-up-heading{
+        font-size: 24px;
+        line-height: 28.36px;
+        letter-spacing: -0.24px;
+      }
+      .sign-up-form .tm-sign-up-para{
+        font-size: 13px;
+        line-height: 23.4px;
+        margin-top: 4px;
+      }
+      .photo-upload-area{
+        gap: 12px;
+        margin: 20px 0px 8px;
+      }
+      .photo-upload-label{
+        max-width: 52px;
+        max-height: 52px;
+      }
+      .photo-upload-label img{
+       padding: 12px;
+      }
+      .tm-photo-text-size{
+        gap: 4px;
+        flex-direction: column;
+      }
+      .tm-photo-text-size .tm-photo-text{
+      font-size: 14px;
+      line-height: 22px;
+      }
+      .tm-photo-text-size .tm-photo-size{
+      font-size: 11px;
+      line-height: 18px;
+      }
+      .tm-sign-up-form{
+        gap: 12px;
+      }
+      .tm-sign-up-form input{
+        padding: 15px 0px 15px 22px;
+      }
+      .tm-sign-up-form::placeholder{
+      font-size: 11px;
+      line-height: 18px;
+      }
+      .tm-sign-up-btn{
+      font-size: 14px;
+      line-height: 22px;
+      padding: 6px 10px;
+      }
+      .tm-old-user{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22.96px;
+      }
+      .tm-old-user-link{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22.96px;
+      }
+      /* sign in page */
+      .tm-sign-in-privacy{
+        display: block;
+      }
+      
+           /* modal */
+           .hide-on-small {
+            display: none;
+        }
+        .tm-btn-wrapper button:first-child {
+            width: 100%;
+        }
+        .tm-btn-wrapper button:last-child {
+            width: 79%;
+        }
+           .modal-model-measurment .column-1{
+            display: none;
+         }
+         .modal-model-measurment .column-2 {
+             position: relative;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+              background-color:transparent;
+         }
+         .modal-start-option{
+             padding: 97px 45px 61px;
+         }
+         .modal-content {
+             width: 90%;
+        }
+        .measurment-modal-title {
+            padding: 90px 10px 40px;
+          }
+          .column-2 span svg {
+            top: 40px;
+            right: 20px;
+        }
+        .measurment-input-item {
+            gap: 8px;
+            padding: 10px;
+        }
+        .continue {
+            padding: 8px 14px;
+            font-size: 14px;
+            line-height: 22.24px;
+        }
+        .measurment-input-item label {
+            font-size: 11px;
+            line-height: 18px;
+            margin-top: 12px;
+        }
+        .measurment-input-item input {
+            color: #1A1A1A;
+            font-size: 11px;
+            line-height: 17.4px;
+        }
+        .first-modal-content {
+            gap: 18px;
+        }
+    
+    /* trade.html responsive by tarek */
+    .trade-section .container{
+        --bs-gutter-x: 0rem;
+    }
+    .trade-title-heading{
+        padding: 0px 20px;
+    }
+    .trade-heading-p {
+        display: none;
+    }
+
+    .trade-section-row {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    .trade-col-content {
+        align-items: center;
+        padding: 28px 20px;
+    }
+
+    .trade-col-heading {
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+
+    .trade-col {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .trade-col-para {
+        text-align: center;
+    }
+
+    .trade-col-img svg {
+        max-height: 48px;
+        max-width: 48px;
+    }
+
+    .trade-note {
+        margin-top: 28px;
+    }
+
+    .trade-note h4 {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 19.2px;
+        padding: 0px 20px;
+    }
+
+    /* terms responsive by tarek */
+    .terms-mobile-content {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .terms-desktop-version {
+        display: none;
+    }
+
+    .terms-banner-inner svg {
+        display: none;
+    }
+
+    .terms-banner h3 {
+        display: block;
+        font-size: 12px;
+    }
+
+    .terms-banner {
+        padding: 50.5px 20px;
+    }
+
+    .terms-banner-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .terms-banner-inner h2 {
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: -0.2px;
+    }
+
+    .terms-section {
+        padding: 30px 0px;
+    }
+
+    .terms-title h2 {
+        font-size: 20px;
+    }
+
+    .terms-accordion-heading {
+        font-size: 16px;
+    }
+
+    .terms-heading-para {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: var(--Text-Body, #5A5C5F);
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 200%;
+        padding-top: 4px;
+    }
+
+    .terms-h4 {
+        padding-top: 0px;
+    }
+}
+
+/* extra small devices */
+@media (max-width: 374px) {
+    /* tarek sign up page */
+    /* header{
+        display: none;
+    } */
+    .sign-up-header,
+    .sign-up-footer{
+        display: none;
+    }
+.sign-up-section{
+    padding: 0px;
+    font-family: Raleway;
+  }
+  .sign-up-section .container{
+  box-shadow:none;
+  }
+  .sign-up-form{
+    padding: 43px 0px 128px;
+  }
+  .sign-up-form .tm-sign-up-heading{
+    font-size: 24px;
+    line-height: 28.36px;
+    letter-spacing: -0.24px;
+  }
+  .sign-up-form .tm-sign-up-para{
+    font-size: 13px;
+    line-height: 23.4px;
+    margin-top: 4px;
+  }
+  .photo-upload-area{
+    gap: 12px;
+    margin: 20px 0px 8px;
+  }
+  .photo-upload-label{
+    max-width: 52px;
+    max-height: 52px;
+  }
+  .photo-upload-label img{
+   padding: 12px;
+  }
+  .tm-photo-text-size{
+    gap: 4px;
+    flex-direction: column;
+  }
+  .tm-photo-text-size .tm-photo-text{
+  font-size: 14px;
+  line-height: 22px;
+  }
+  .tm-photo-text-size .tm-photo-size{
+  font-size: 11px;
+  line-height: 18px;
+  }
+  .tm-sign-up-form{
+    gap: 12px;
+  }
+  .tm-sign-up-form input{
+    padding: 15px 0px 15px 22px;
+  }
+  .tm-sign-up-form::placeholder{
+  font-size: 11px;
+  line-height: 18px;
+  }
+  .tm-sign-up-btn{
+  font-size: 14px;
+  line-height: 22px;
+  padding: 6px 10px;
+  }
+  .tm-old-user{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22.96px;
+  }
+  .tm-old-user-link{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22.96px;
+  }
+  /* sign in page */
+  .tm-sign-in-privacy{
+    display: block;
+  }
+  
+      /* modal */
+       .hide-on-small {
+        display: none;
+    }
+    .tm-btn-wrapper button:first-child {
+        width: 100%;
+    }
+    .tm-btn-wrapper button:last-child {
+        width: 79%;
+    } 
+      .modal-model-measurment .column-1{
+        display: none;
+     }
+     .modal-model-measurment .column-2 {
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          background-color:transparent;
+     }
+     .modal-start-option{
+         padding: 97px 45px 61px;
+     }
+     .modal-content {
+         width: 90%;
+    }
+    .measurment-modal-title {
+        padding: 90px 10px 40px;
+      }
+      .column-2 span svg {
+        top: 40px;
+        right: 20px;
+    }
+    .measurment-input-item {
+        gap: 8px;
+        padding: 10px;
+    }
+    .continue {
+        padding: 8px 14px;
+        font-size: 14px;
+        line-height: 22.24px;
+    }
+    .measurment-input-item label {
+        font-size: 11px;
+        line-height: 18px;
+        margin-top: 12px;
+    }
+    .measurment-input-item input {
+        color: #1A1A1A;
+        font-size: 11px;
+        line-height: 17.4px;
+    }
+    .first-modal-content {
+        gap: 18px;
+    }
+    .tm-total-amount {
+        margin: 20px 0px;
+        padding: 9.5px 0px;
+    }
+      .tm-total-amount h5{
+        color: #1A1A1A;
+      font-family: Raleway;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32.8px;
+      }
+      .tm-total-amount h6{
+        color:  #1A1A1A;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+        text-transform: capitalize;
+      }
+      .first-modal-content h3{
+      font-size: 24px;
+      line-height: 28.6px;
+      }   
+      .measurment-input-area {
+        gap: 7px;
+    }   
+
+    /* trade.html responsive by tarek */
+    .trade-section .container{
+        --bs-gutter-x: 0rem;
+    }
+    .trade-title-heading{
+        padding: 0px 38px;
+    }
+    .trade-heading-p {
+        display: none;
+    }
+
+    .trade-section-row {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    .trade-col-content {
+        align-items: center;
+        padding: 28px 20px;
+    }
+
+    .trade-col-heading {
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+
+    .trade-col {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .trade-col-para {
+        text-align: center;
+    }
+
+    .trade-col-img svg {
+        max-height: 48px;
+        max-width: 48px;
+    }
+
+    .trade-note {
+        margin-top: 28px;
+    }
+
+    .trade-note h4 {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 19.2px;
+        padding: 0px 20px;
+    }
+
+    /* terms responsive by tarek */
+    .terms-mobile-content {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .terms-desktop-version {
+        display: none;
+    }
+
+    .terms-banner-inner svg {
+        display: none;
+    }
+
+    .terms-banner h3 {
+        display: block;
+        font-size: 12px;
+    }
+
+    .terms-banner {
+        padding: 50.5px 20px;
+    }
+
+    .terms-banner-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .terms-banner-inner h2 {
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: -0.2px;
+    }
+
+    .terms-section {
+        padding: 30px 0px;
+    }
+
+    .terms-title h2 {
+        font-size: 20px;
+    }
+
+    .terms-accordion-heading {
+        font-size: 16px;
+    }
+
+    .terms-heading-para {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: var(--Text-Body, #5A5C5F);
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 200%;
+        padding-top: 4px;
+    }
+
+    .terms-h4 {
+        padding-top: 0px;
+    }
+
+}
