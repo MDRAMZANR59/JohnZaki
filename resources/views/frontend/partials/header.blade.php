@@ -135,65 +135,7 @@
                             <div class="upper--number">
                                 <span>0</span>
                             </div>
-                            <!-- <div class="heart--icon--wishlist--wrapper">
-                                <div class="heart--icon--wishlist--wrapper--scroll">
-                                    <div class="heart--icon--wishlist--item">
-                                        <div class="heart--icon--wishlist--item--img">
-                                            <img src="./assets/images/product_d_item1.png" alt="not found">
-                                        </div>
-                                        <div class="heart--icon--wishlist--item--text">
-                                            <h4>Demo Product Name</h4>
-                                            <p>Demo Product Description or Price</p>
-                                        </div>
-                                    </div>
-                                    <div class="heart--icon--wishlist--item">
-                                        <div class="heart--icon--wishlist--item--img">
-                                            <img src="./assets/images/product_d_item1.png" alt="not found">
-                                        </div>
-                                        <div class="heart--icon--wishlist--item--text">
-                                            <h4>Demo Product Name</h4>
-                                            <p>Demo Product Description or Price</p>
-                                        </div>
-                                    </div>
-                                    <div class="heart--icon--wishlist--item">
-                                        <div class="heart--icon--wishlist--item--img">
-                                            <img src="./assets/images/product_d_item1.png" alt="not found">
-                                        </div>
-                                        <div class="heart--icon--wishlist--item--text">
-                                            <h4>Demo Product Name</h4>
-                                            <p>Demo Product Description or Price</p>
-                                        </div>
-                                    </div>
-                                    <div class="heart--icon--wishlist--item">
-                                        <div class="heart--icon--wishlist--item--img">
-                                            <img src="./assets/images/product_d_item1.png" alt="not found">
-                                        </div>
-                                        <div class="heart--icon--wishlist--item--text">
-                                            <h4>Demo Product Name</h4>
-                                            <p>Demo Product Description or Price</p>
-                                        </div>
-                                    </div>
-                                    <div class="heart--icon--wishlist--item">
-                                        <div class="heart--icon--wishlist--item--img">
-                                            <img src="./assets/images/product_d_item1.png" alt="not found">
-                                        </div>
-                                        <div class="heart--icon--wishlist--item--text">
-                                            <h4>Demo Product Name</h4>
-                                            <p>Demo Product Description or Price</p>
-                                        </div>
-                                    </div>
-                                    <div class="heart--icon--wishlist--item">
-                                        <div class="heart--icon--wishlist--item--img">
-                                            <img src="./assets/images/product_d_item1.png" alt="not found">
-                                        </div>
-                                        <div class="heart--icon--wishlist--item--text">
-                                            <h4>Demo Product Name</h4>
-                                            <p>Demo Product Description or Price</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> -->
+                            
                         </div>
                         <div class="notification--icon">
                             <div class="notification--icon--svg">
@@ -242,21 +184,28 @@
                     <!-- icon and shoping part end -->
 
                     <!-- sign in and up start hare -->
-                    <div class="nav--btn--btn">
-                        <a href="{{ route('login') }}" class="signIn--btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31"
-                                viewBox="0 0 31 31" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.1875 9.56178C10.1875 6.62817 12.566 4.25 15.5 4.25C18.434 4.25 20.8125 6.62817 20.8125 9.56178C20.8125 12.4954 18.434 14.8736 15.5 14.8736C12.566 14.8736 10.1875 12.4954 10.1875 9.56178ZM15.5 6.12475C13.6015 6.12475 12.0625 7.66356 12.0625 9.56178C12.0625 11.46 13.6015 12.9988 15.5 12.9988C17.3985 12.9988 18.9375 11.46 18.9375 9.56178C18.9375 7.66356 17.3985 6.12475 15.5 6.12475Z"
-                                    fill="#5A5C5F" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.5 18.6231C8.9467 18.6231 7.6875 19.8821 7.6875 21.4352V22.9203C7.6875 22.9429 7.70389 22.9622 7.72621 22.9659C12.8747 23.8063 18.1253 23.8063 23.2738 22.9659C23.2961 22.9622 23.3125 22.9429 23.3125 22.9203V21.4352C23.3125 19.8821 22.0533 18.6231 20.5 18.6231H20.0739C20.041 18.6231 20.0082 18.6283 19.9769 18.6385L18.895 18.9917C16.689 19.712 14.311 19.712 12.105 18.9917L11.0231 18.6385C10.9918 18.6283 10.959 18.6231 10.9261 18.6231H10.5ZM5.8125 21.4352C5.8125 18.8467 7.91116 16.7483 10.5 16.7483H10.9261C11.1567 16.7483 11.3859 16.7848 11.6051 16.8563L12.687 17.2096C14.5148 17.8063 16.4852 17.8063 18.313 17.2096L19.3949 16.8563C19.6141 16.7848 19.8433 16.7483 20.0739 16.7483H20.5C23.0888 16.7483 25.1875 18.8467 25.1875 21.4352V22.9203C25.1875 23.8617 24.5051 24.6644 23.5759 24.8161C18.2274 25.6892 12.7726 25.6892 7.42409 24.8161C6.49485 24.6644 5.8125 23.8617 5.8125 22.9203V21.4352Z"
-                                    fill="#5A5C5F" />
-                            </svg>
-                            Sign in
-                        </a>
-                        <a class="signUp--btn" href="signup.html">Sign up</a>
-                    </div>
+                    @guest
+                        <div class="nav--btn--btn">
+                            <a href="{{ route('login') }}" class="signIn--btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31"
+                                    viewBox="0 0 31 31" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.1875 9.56178C10.1875 6.62817 12.566 4.25 15.5 4.25C18.434 4.25 20.8125 6.62817 20.8125 9.56178C20.8125 12.4954 18.434 14.8736 15.5 14.8736C12.566 14.8736 10.1875 12.4954 10.1875 9.56178ZM15.5 6.12475C13.6015 6.12475 12.0625 7.66356 12.0625 9.56178C12.0625 11.46 13.6015 12.9988 15.5 12.9988C17.3985 12.9988 18.9375 11.46 18.9375 9.56178C18.9375 7.66356 17.3985 6.12475 15.5 6.12475Z"
+                                        fill="#5A5C5F" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.5 18.6231C8.9467 18.6231 7.6875 19.8821 7.6875 21.4352V22.9203C7.6875 22.9429 7.70389 22.9622 7.72621 22.9659C12.8747 23.8063 18.1253 23.8063 23.2738 22.9659C23.2961 22.9622 23.3125 22.9429 23.3125 22.9203V21.4352C23.3125 19.8821 22.0533 18.6231 20.5 18.6231H20.0739C20.041 18.6231 20.0082 18.6283 19.9769 18.6385L18.895 18.9917C16.689 19.712 14.311 19.712 12.105 18.9917L11.0231 18.6385C10.9918 18.6283 10.959 18.6231 10.9261 18.6231H10.5ZM5.8125 21.4352C5.8125 18.8467 7.91116 16.7483 10.5 16.7483H10.9261C11.1567 16.7483 11.3859 16.7848 11.6051 16.8563L12.687 17.2096C14.5148 17.8063 16.4852 17.8063 18.313 17.2096L19.3949 16.8563C19.6141 16.7848 19.8433 16.7483 20.0739 16.7483H20.5C23.0888 16.7483 25.1875 18.8467 25.1875 21.4352V22.9203C25.1875 23.8617 24.5051 24.6644 23.5759 24.8161C18.2274 25.6892 12.7726 25.6892 7.42409 24.8161C6.49485 24.6644 5.8125 23.8617 5.8125 22.9203V21.4352Z"
+                                        fill="#5A5C5F" />
+                                </svg>
+                                Sign in
+                            </a>
+                            <a class="signUp--btn" href="{{ route('register') }}">Sign up</a>
+                        </div>
+                    @endguest
+                    @auth
+                        <div class="nav--btn--btn">
+                            <a class="signUp--btn" href="{{ route('dashboard') }}">Admin</a>
+                        </div>
+                    @endauth
                     <!-- sign in and up end hare -->
                 </div>
                 <!-- nav btn end hare -->

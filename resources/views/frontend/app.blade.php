@@ -13,7 +13,9 @@
 <body>
 
     <!-- heading part start -->
-    @include('frontend.partials.header')
+    @if (url()->full() !== route('login') && url()->full()!==route('register'))
+        @include('frontend.partials.header')
+    @endif
     <!-- heading part end -->
 
 
