@@ -9,62 +9,51 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Font Awesome (for icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <style>
-        /* Sidebar background color and text */
+        /* Custom styles that are still needed */
         .sidebar {
-            background-color: #343a40;
-        }
-
-        .sidebar .nav-item .nav-link {
-            color: #ffffff;
-            transition: background-color 0.3s ease;
-        }
-
-        .sidebar .nav-item .nav-link:hover,
-        .sidebar .nav-item.active .nav-link {
-            background-color: #4e73df;
-            color: white;
+            height: 100vh;
         }
 
         .sidebar-heading {
+            color: #fff;
             font-weight: bold;
-            color: #ffffff;
-        }
-
-        .sidebar-brand {
-            background-color: #1e2125;
-            padding: 15px 0;
-        }
-
-        .sidebar-brand-icon {
-            font-size: 1.5rem;
         }
 
         .sidebar-brand-text {
+            color: rgb(0, 159, 252);
             font-size: 1.2rem;
+        }
+
+        .nav-item.active > .nav-link {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .nav-item .nav-link {
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .sidebar-divider {
             border-color: #474f57;
         }
-
-        .sidebar .nav-item {
-            margin-bottom: 10px;
-        }
-
-        /* Active item styles */
-        .nav-link.active {
-            background-color: #4e73df;
-            color: white;
+        .hb:hover {
+            color:white;
+            background-color: rgb(0, 204, 255)
         }
     </style>
 </head>
 
 <body>
 
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-dark sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center py-3" href="#">
             <div class="sidebar-brand-icon">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -85,14 +74,13 @@
         <!-- Divider -->
         <hr class="sidebar-divider">
 
-        <!-- Heading -->
         <div class="sidebar-heading">
-            Carosel
+            Carousel
         </div>
 
-        <!-- Nav Item - Platform -->
+        <!-- Nav Item - Department -->
         <li class="nav-item" id="platformItem">
-            <a class="nav-link" href="{{route('department.list')}}">
+            <a class="nav-link" href="{{ route('department.list') }}">
                 <i class="fas fa-dungeon"></i>
                 <span>Department</span>
             </a>
@@ -102,16 +90,49 @@
         <li class="nav-item" id="versionItem">
             <a class="nav-link" href="#">
                 <i class="fas fa-code-branch"></i>
-                <span>featured Store</span>
+                <span>Featured Store</span>
             </a>
         </li>
 
-        <!-- Nav Item - Available Amount -->
-        <li class="nav-item" id="amountItem">
-            <a class="nav-link" href="#">
+        <!-- Nav Item - Product (with collapsible submenu) -->
+        <li class="nav-item" id="product">
+            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#productSubmenu" aria-expanded="false" aria-controls="productSubmenu">
                 <i class="fas fa-sort-amount-up-alt"></i>
-                <span>Available Amount</span>
+                <span>Product</span>
             </a>
+            <!-- Collapsible Dropdown Menu for Product -->
+            <ul class="collapse nav bg-primary rounded nav-pills flex-column ms-3" id="productSubmenu">
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('product.list')}}">
+                        <span>Product List</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('type.list')}}">
+                        <span>Product Type</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('fabric.list')}}">
+                        <span>Fabric</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('placket.list')}}">
+                        <span>Placket</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('color.list')}}">
+                        <span>Color</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('size.list')}}">
+                        <span>Size</span>
+                    </a>
+                </li>
+            </ul>
         </li>
 
         <!-- Nav Item - Card -->
@@ -132,53 +153,56 @@
 
     <script>
         $(document).ready(function() {
-            // Function to set the active class to clicked menu item
+            // Set the active menu item based on clicks
             function setActiveMenu(menuId) {
-                // Remove active class from all items
-                $('#accordionSidebar .nav-item').removeClass('active');
-                // Add active class to the clicked menu item
-                $('#' + menuId).addClass('active');
-                // Remove active class from all anchor links inside the sidebar
-                $('#accordionSidebar .nav-link').removeClass('active');
-                // Add active class to the clicked menu's anchor link
-                $('#' + menuId + ' .nav-link').addClass('active');
+                $('.nav-item').removeClass('active'); // Remove active class from all items
+                $('#' + menuId).addClass('active'); // Add active class to the clicked item
             }
 
-            // Function to check current route and set active menu based on that
+            // Function to check the URL for the active menu item
             function setActiveMenuFromUrl() {
-                var currentUrl = window.location.href;
-
-                if (currentUrl.indexOf('#') !== -1) {
-                    // This is a placeholder URL, adjust as needed
+                const currentUrl = window.location.href;
+                if (currentUrl.includes('department')) {
+                    setActiveMenu('platformItem');
+                } else if (currentUrl.includes('product')) {
+                    setActiveMenu('product');
+                } else if (currentUrl.includes('card')) {
+                    setActiveMenu('cardItem');
+                } else {
                     setActiveMenu('dashboardItem');
                 }
             }
 
-            // Set active menu based on current URL when the page loads
+            // Initialize active menu based on current URL
             setActiveMenuFromUrl();
 
-            // Click events for menu items
-            $('#dashboardItem').click(function() {
-                setActiveMenu('dashboardItem');
+            // Click event for menu items
+            $('#dashboardItem').click(() => setActiveMenu('dashboardItem'));
+            $('#platformItem').click(() => setActiveMenu('platformItem'));
+            $('#versionItem').click(() => setActiveMenu('versionItem'));
+            $('#cardItem').click(() => setActiveMenu('cardItem'));
+
+            // Handle collapsible submenus
+            $('#product').click(function() {
+                const isExpanded = $('#productSubmenu').hasClass('show');
+                // Toggle active class on the main menu item when the submenu is shown or hidden
+                if (isExpanded) {
+                    $('#product').removeClass('active');
+                } else {
+                    $('#product').addClass('active');
+                }
+                // Toggle the visibility of the submenu
+                $('#productSubmenu').toggleClass('show');
             });
 
-            $('#platformItem').click(function() {
-                setActiveMenu('platformItem');
-            });
-
-            $('#versionItem').click(function() {
-                setActiveMenu('versionItem');
-            });
-
-            $('#amountItem').click(function() {
-                setActiveMenu('amountItem');
-            });
-
-            $('#cardItem').click(function() {
-                setActiveMenu('cardItem');
+            // Optional: Reset the background of the sub-menu items when collapsed
+            $('#productSubmenu .nav-link').click(function() {
+                // Remove the 'active' class from all sub-menu links
+                $('#productSubmenu .nav-link').removeClass('active');
             });
         });
     </script>
+
 </body>
 
 </html>

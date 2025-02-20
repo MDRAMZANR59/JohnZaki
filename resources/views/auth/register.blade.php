@@ -120,13 +120,25 @@
                     </div>
                     <form action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
                         @csrf
+                        {{-- <div class="mb-3">
+                            <label for="role" class="form-label">Select Role</label>
+                            <select id="role" name="role" class="form-select @error('role') is-invalid @enderror">
+                                <option value="" selected>Select One</option>
+                                <option value="1" {{ old('role') == 1 ? 'selected' : '' }}>Bayer</option>
+                                <option value="2" {{ old('role') == 2 ? 'selected' : '' }}>Seller</option>
+                            </select>
+
+                            <!-- Error Message -->
+                            @error('role')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div> --}}
                         <div class="bi-input-wrapper file-upload overflow-hidden">
                             <img id="preview-image" src="{{ asset('frontend/images/upload-image.png') }}" alt="No Image"
                                 srcset=""/>
                             <div class="bi-input-wrapper-text">
                                 <input id="file-input" type="file" style="display: none" name="image" value="{{old('image')}}" />
                                 <span class="bi-add-pic">Add your photo </span>
-                                <span class="bi-add-pic-size">(Less than 2MB)</span>
                             </div>
                         </div>
                         <div class="bi-input-wrapper">

@@ -13,10 +13,10 @@
             <div class="card-header bg-primary text-white text-center">
                 <h3>Add New Department</h3>
             </div><button class="btn btn-info float-start">
-                <a href="{{route('showDepartment')}}" class="text-white text-decoration-none">Back To Home</a>
+                <a href="{{route('department.list')}}" class="text-white text-decoration-none">Back To Home</a>
             </button>
             <div class="card-body">
-                <form action="{{ route('saveDepartment',$data->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('department.update',$data->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3">

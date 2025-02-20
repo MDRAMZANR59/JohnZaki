@@ -33,7 +33,7 @@ class DepartmentController extends Controller
         $model->image=$imageName;
         $model->save();
 
-        return redirect()->back()->with('success','Data Save Successfull');
+        return redirect()->route('department.list')->with('success','Data Save Successfull');
     }
 
 
@@ -46,7 +46,7 @@ class DepartmentController extends Controller
             'title'=>"required|string|min:1",
             'image'=>"required|image|mimes:png,jpg,jpeg|max:10240"
         ]);
-        $model= Department::find($id);
+        $model= Department::findOrFail($id);
         $model->title=$request->title;
 
         if($request->hasFile('image')){
@@ -57,11 +57,18 @@ class DepartmentController extends Controller
             $request->image->move(public_path('backend/img'),$newImage);
             $model->image=$newImage;
         }
+        $model->save();
+        return redirect()->route('department.list')->with('success','Data Update Successfull');
 
+    }
 
+    public function delete($id){
+        $data=Department::findOrFail($id);
+        if(file_exists(public_path('backend/img/'.$data->image))){
+            unlink(public_path('backend/img/'.$data->image));
+        }
+        $data->delete();
 
-        $model->update();
-        return redirect()->route('showDepartment')->with('success','Data Update Successfull');
-
+        return redirect()->to(url()->previous())->with('info','Data Deleted Successfull');
     }
 }
