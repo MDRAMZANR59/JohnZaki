@@ -1,11 +1,11 @@
 @extends('backend.app')
 @section('title')
-    Placket
+    Cuff
 @endsection
 @section('content')
     <div>
         <button class="btn btn-info float-end">
-            <a href="{{ route('placket.add') }}" class="text-white text-decoration-none">Add Placket</a>
+            <a href="{{ route('cuff.add') }}" class="text-white text-decoration-none">Add Cuff</a>
         </button>
         <table class="table table-striped">
             <thead>
@@ -27,10 +27,10 @@
                         </td>
                         <td>
                             <div class="d-flex">
-                                <a href="{{ route('placket.edit', $data->id) }}" class="btn btd-small text-primary">Edit</a>
-                                <form action="{{ route('placket.delete', $data->id) }}" method="post">
+                                <a href="{{ route('cuff.edit', $data->id) }}" class="btn btd-small text-primary">Edit</a>
+                                <form action="{{ route('cuff.delete', $data->id) }}" method="post">
                                     @csrf
-                                    <button placket="submit" class="btn btd-small text-danger">Delete</button>
+                                    <button cuff="submit" class="btn btd-small text-danger">Delete</button>
                                 </form>
                             </div>
                         </td>

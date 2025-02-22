@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Placket;
+use App\Models\Yoke;
 use Illuminate\Http\Request;
 
-use function PHPUnit\Framework\fileExists;
-
-class PlacketController extends Controller
+class YokeController extends Controller
 {
     public function index(){
-        $datas = Placket::get();
-        return view('backend.layout.product.placket.list',compact('datas'));
+        $datas = Yoke::get();
+        return view('backend.layout.product.yoke.list',compact('datas'));
     }
 
     public function create(){
-        return view('backend.layout.product.placket.create');
+        return view('backend.layout.product.yoke.create');
     }
     public function store(Request $request){
         $validatio=$request->validate([
@@ -23,24 +21,24 @@ class PlacketController extends Controller
             'image'=>'required|mimes:png,jpg,jpeg|image|max:10240',
         ]);
 
-        $model=new Placket();
+        $model=new Yoke();
         $model->title=$request->title;
 
         $imageName=null;
         if($request->image){
-            $imageName='Plaket_'.time().'.'.$request->image->extension();
+            $imageName='Yoke_'.time().'.'.$request->image->extension();
             $request->image->move(public_path('backend/img/'),$imageName);
 
             $model->image=$imageName;
         }
         $model->save();
 
-        return redirect()->route('placket.add')->with('success','Data Save Successfull');
+        return redirect()->route('yoke.add')->with('success','Data Save Successfull');
     }
 
     public function edit($id){
-        $data=Placket::findOrFail($id);
-        return view('backend.layout.product.placket.edit',compact('data'));
+        $data=Yoke::findOrFail($id);
+        return view('backend.layout.product.yoke.edit',compact('data'));
     }
 
     public function update(Request $request, $id){
@@ -49,12 +47,12 @@ class PlacketController extends Controller
             'image'=>'nullable|mimes:png,jpg,jpeg|image|max:10240'
         ]);
 
-        $data=Placket::findOrFail($id);
+        $data=Yoke::findOrFail($id);
         if($request->hasFile('image')){
             if($data->image && file_exists(public_path('backend/img/'.$data->image))){
                 unlink(public_path('backend/img/'.$data->image));
 
-                $newImage='Plaket_'.time().'.'.$request->image->extension();
+                $newImage='Yoke_'.time().'.'.$request->image->extension();
                 $request->image->move(public_path('backend/img/'),$newImage);
 
                 $data->image=$newImage;
@@ -63,12 +61,12 @@ class PlacketController extends Controller
 
         $data->title=$request->title;
         $data->update();
-        return redirect()->route('placket.list')->with('info','Data Update Successfull');
+        return redirect()->route('yoke.list')->with('info','Data Update Successfull');
 
     }
 
     public function delete($id){
-        $model=Placket::findOrFail($id);
+        $model=Yoke::findOrFail($id);
         if(file_exists(public_path('backend/img/'.$model->image))){
             unlink(public_path('backend/img/'.$model->image));
         }

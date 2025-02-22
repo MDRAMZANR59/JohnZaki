@@ -1,6 +1,6 @@
 @extends('backend.app')
 @section('title')
-    Placket Add
+    Front Pleat Add
 @endsection
 @section('content')
     <div class="container mt-5">
@@ -10,17 +10,17 @@
 
         <div class="card shadow-lg">
             <div class="card-header bg-primary text-white text-center">
-                <h3>Add New Placket</h3>
+                <h3>Add New FrontPleat</h3>
             </div><button class="btn btn-info float-start">
-                <a href="{{ route('placket.list') }}" class="text-white text-decoration-none">Back To Home</a>
+                <a href="{{ route('frontPleat.list') }}" class="text-white text-decoration-none">Back To Home</a>
             </button>
             <div class="card-body">
-                <form action="{{ route('placket.save') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('frontPleat.save') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3">
-                        <label for="title" class="form-label">Placket Name</label>
-                        <input placket="text" id="title" placeholder="Enter Placket Name" name="title"
+                        <label for="title" class="form-label">Front Pleat Name</label>
+                        <input frontPleat="text" id="title" placeholder="Enter FrontPleat Name" name="title"
                             class="form-control" value="{{ old('title') }}" />
                         @error('title')
                             <p class="text-danger">{{ $message }}</p>
@@ -34,7 +34,7 @@
                         @enderror
                     </div>
                     <!-- Centered and Block Button -->
-                    <button placket="submit" class="btn btn-success btn-lg d-block mx-auto mt-4">Save</button>
+                    <button frontPleat="submit" class="btn btn-success btn-lg d-block mx-auto mt-4">Save</button>
                 </form>
             </div>
         </div>

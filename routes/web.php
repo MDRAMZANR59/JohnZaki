@@ -1,16 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CuffController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SizeController;
 use App\Http\Controllers\TypeController;
+use App\Http\Controllers\YokeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ColorController;
+use App\Http\Controllers\CollarController;
 use App\Http\Controllers\FabricController;
 use App\Http\Controllers\PlacketController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\FrontPleatController;
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -84,5 +88,37 @@ Route::post('admin/size/Store',[SizeController::class,'store'])->name('size.save
 Route::get('admin/size/edit/{id}',[SizeController::class,'edit'])->name('size.edit');
 Route::post('admin/size/update/{id}',[SizeController::class,'update'])->name('size.update');
 Route::post('admin/size/delete/{id}',[SizeController::class,'delete'])->name('size.delete');
+
+//Collar
+Route::get('admin/product/All_Collar',[CollarController::class,'index'])->name('collar.list');//
+Route::get('admin/collar/Create',[CollarController::class,'create'])->name('collar.add');
+Route::post('admin/collar/Store',[CollarController::class,'store'])->name('collar.save');
+Route::get('admin/collar/edit/{id}',[CollarController::class,'edit'])->name('collar.edit');
+Route::post('admin/collar/update/{id}',[CollarController::class,'update'])->name('collar.update');
+Route::post('admin/collar/delete/{id}',[CollarController::class,'delete'])->name('collar.delete');
+
+//Front Pleat
+Route::get('admin/product/All_Front Pleat',[FrontPleatController::class,'index'])->name('frontPleat.list');//
+Route::get('admin/frontPleat/Create',[FrontPleatController::class,'create'])->name('frontPleat.add');
+Route::post('admin/frontPleat/Store',[FrontPleatController::class,'store'])->name('frontPleat.save');
+Route::get('admin/frontPleat/edit/{id}',[FrontPleatController::class,'edit'])->name('frontPleat.edit');
+Route::post('admin/frontPleat/update/{id}',[FrontPleatController::class,'update'])->name('frontPleat.update');
+Route::post('admin/frontPleat/delete/{id}',[FrontPleatController::class,'delete'])->name('frontPleat.delete');
+
+//Cuff
+Route::get('admin/product/All_Cuff',[CuffController::class,'index'])->name('cuff.list');//
+Route::get('admin/cuff/Create',[CuffController::class,'create'])->name('cuff.add');
+Route::post('admin/cuff/Store',[CuffController::class,'store'])->name('cuff.save');
+Route::get('admin/cuff/edit/{id}',[CuffController::class,'edit'])->name('cuff.edit');
+Route::post('admin/cuff/update/{id}',[CuffController::class,'update'])->name('cuff.update');
+Route::post('admin/cuff/delete/{id}',[CuffController::class,'delete'])->name('cuff.delete');
+
+//yoke
+Route::get('admin/product/All_Yoke',[YokeController::class,'index'])->name('yoke.list');//
+Route::get('admin/yoke/Create',[YokeController::class,'create'])->name('yoke.add');
+Route::post('admin/yoke/Store',[YokeController::class,'store'])->name('yoke.save');
+Route::get('admin/yoke/edit/{id}',[YokeController::class,'edit'])->name('yoke.edit');
+Route::post('admin/yoke/update/{id}',[YokeController::class,'update'])->name('yoke.update');
+Route::post('admin/yoke/delete/{id}',[YokeController::class,'delete'])->name('yoke.delete');
 
 require __DIR__.'/auth.php';

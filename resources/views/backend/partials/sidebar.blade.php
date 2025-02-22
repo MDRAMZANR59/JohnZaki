@@ -123,6 +123,26 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('collar.list')}}">
+                        <span>Collar</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('frontPleat.list')}}">
+                        <span>Front Pleat</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('cuff.list')}}">
+                        <span>Cuff</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hb" href="{{route('yoke.list')}}">
+                        <span>Yoke</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link hb" href="{{route('color.list')}}">
                         <span>Color</span>
                     </a>
